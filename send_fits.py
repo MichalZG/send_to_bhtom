@@ -28,8 +28,10 @@ def read_yaml(path):
 def check_hashtag(config):
     if not "bhtom_hashtag" in config or config["bhtom_hashtag"] is None:
         hashtag = os.getenv("bhtom_hashtag")
-        if hashtag is None: 
-            raise ValueError("No hashtag found in either the configuration or the environment")
+        if hashtag is None:
+            raise ValueError(
+                "No hashtag found in either the configuration or the environment"
+            )
         else:
             config["hashtag"] = hashtag
 
