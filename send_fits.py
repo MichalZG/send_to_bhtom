@@ -25,6 +25,17 @@ def read_yaml(path):
     return data
 
 
+def check_hashtag(config):
+    if not "bhtom_hashtag" in config or config["bhtom_hashtag"] is None:
+        hashtag = os.getenv("bhtom_hashtag")
+        if hashtag is None: 
+            raise ValueError("No hashtag found in either the configuration or the environment")
+        else:
+            config["hashtag"] = hashtag
+
+    return config
+
+
 def prepare_files_dict(files_list, config, names_map):
     files_dict = {}
 
@@ -107,6 +118,8 @@ if __name__ == "__main__":
 
     config = read_yaml(CONFIG_FILE_PATH)
     names_map = read_yaml(NAMES_MAP_FILE_PATH)
+
+    config = check_hashtag(config)
 
     files_dict = prepare_files_dict(files_list, config, names_map)
     send_fits_file(files_dict, config, dry_run)

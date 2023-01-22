@@ -1,4 +1,4 @@
-hashtag: bhtom_UZPW50_Chile_QHY268PRO_michal_zejmo_52188231a24f129f67363b9e1b176e05
+bhtom_hashtag: # fill it here or set is as env variable
 bhtom_url: https://bh-tom.astrolabs.pl/photometry-upload/
 
 radius: 2.0
