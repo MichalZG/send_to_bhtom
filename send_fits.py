@@ -33,7 +33,7 @@ def check_hashtag(config):
                 "No hashtag found in either the configuration or the environment"
             )
         else:
-            config["hashtag"] = hashtag
+            config["bhtom_hashtag"] = hashtag
 
     return config
 
