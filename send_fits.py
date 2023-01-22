@@ -71,7 +71,7 @@ def send_fits_file(files_dict, config, dry_run):
             response = requests.post(
                 url=config["bhtom_url"],
                 headers={
-                    "hashtag": config["hashtag"],
+                    "hashtag": config["bhtom_hashtag"],
                 },
                 data={
                     "target": file_data["object"],
