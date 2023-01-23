@@ -1,0 +1,14 @@
+bhtom_hashtag: # fill it here or set is as env variable - `export bhtom_hashtag=xxxxxxxxxxxxxxxxx`
+bhtom_url: https://bh-tom.astrolabs.pl/photometry-upload/
+
+radius: 2.0
+
+object_key: OBJECT
+filter_key: FILTER
+filter_map: 
+  B: APASS/B
+  V: APASS/V
+  R: APASS/r
+
+# if no filter map needed leave it empty
+# filter_map: 
