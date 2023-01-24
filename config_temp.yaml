@@ -1,4 +1,4 @@
-bhtom_hashtag: # fill it here or set is as env variable
+bhtom_hashtag: # fill it here or set is as env variable - `export bhtom_hashtag=xxxxxxxxxxxxxxxxx`
 bhtom_url: https://bh-tom.astrolabs.pl/photometry-upload/
 
 radius: 2.0
